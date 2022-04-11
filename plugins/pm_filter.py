@@ -42,7 +42,7 @@ async def give_filter(client, message):
 async def next_page(bot, query):
     ident, req, key, offset = query.data.split("_")
     if int(req) not in [query.from_user.id, 0]:
-        return await query.answer("oKda", show_alert=True)
+        return await query.answer("Please do not view other requests 😢. You request again 🤗", show_alert=True)
     try:
         offset = int(offset)
     except:
@@ -367,7 +367,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 )
                 await query.answer('✌️Hey Check PM, I Have Sent Files In PM🤗', show_alert=True)
         except UserIsBlocked:
-            await query.answer('Unblock the bot mahn !', show_alert=True)
+            await query.answer('Unblock the bot 😡 !', show_alert=True)
         except PeerIdInvalid:
             await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
         except Exception as e:
@@ -420,21 +420,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
+            text=script.START_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode='html'
         )
-        await query.answer('➥Bᴏᴛ Bʏ ✪ Aɴᴏɴʏᴍᴏᴜs Bᴏᴛ Iɴғɪɴɪᴛʏ ✪')
     elif query.data == "help":
-        buttons = [[
-            InlineKeyboardButton('Manual Filter', callback_data='manuelfilter'),
-            InlineKeyboardButton('Auto Filter', callback_data='autofilter')
-        ], [
-            InlineKeyboardButton('Connection', callback_data='coct'),
-            InlineKeyboardButton('Extra Mods', callback_data='extra')
-        ], [
+        buttons = [[   
+            InlineKeyboardButton('☘️ Credits ☘️', callback_data='credits')
+            ],[
             InlineKeyboardButton('🏠 Home', callback_data='start'),
-            InlineKeyboardButton('🚀 Status', callback_data='stats')
+            InlineKeyboardButton('Close 🗑️', callback_data="close")
+            ],[
+            InlineKeyboardButton('🔐 Source Code 🔐', url='https://github.com/KisaraPesanjithPerera/Captain-Price')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -443,23 +440,52 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode='html'
         )
     elif query.data == "about":
-        buttons = [[
+        buttons= [[
             InlineKeyboardButton('🤖 Updates', url='https://t.me/AnonymousBotsInfinity'),
-            InlineKeyboardButton('♥️ Source', url='https://github.com/KisaraPesanjithPerera/Repo')
-        ], [
+            InlineKeyboardButton('My Stats 🚀', callback_data='stats')
+            ],[
             InlineKeyboardButton('🏠 Home', callback_data='start'),
             InlineKeyboardButton('🔐 Close', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.ABOUT_TXT.format(temp.B_NAME),
+            text=script.ABOUT_TXT,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "source":
+        buttons = [[
+            InlineKeyboardButton('👩‍🦯 Back', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.SOURCE_TXT,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "welcome":
+        buttons = [[
+            InlineKeyboardButton('👩‍🦯 Back', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.welcome_help,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "credits":
+        buttons = [[
+            InlineKeyboardButton('👩‍🦯 Back', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.CREDITS,
             reply_markup=reply_markup,
             parse_mode='html'
         )
     elif query.data == "manuelfilter":
         buttons = [[
-            InlineKeyboardButton('👩‍🦯 Back', callback_data='help'),
-            InlineKeyboardButton('⏹️ Buttons', callback_data='button')
+            InlineKeyboardButton('👩‍🦯 Back', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -500,7 +526,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "extra":
         buttons = [[
             InlineKeyboardButton('👩‍🦯 Back', callback_data='help'),
-            InlineKeyboardButton('👮‍♂️ Admin', callback_data='admin')
+            InlineKeyboardButton('My Stats 🚀', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -524,6 +550,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('♻️ Refresh ♻️', callback_data='rfrsh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        cpu = psutil.cpu_percent()
+        ram = psutil.virtual_memory().percent
         total = await Media.count_documents()
         users = await db.total_users_count()
         chats = await db.total_chat_count()
@@ -532,17 +560,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
         monsize = get_size(monsize)
         free = get_size(free)
         await query.message.edit_text(
-            text=script.STATUS_TXT.format(total, users, chats, monsize, free),
+            text=script.STATUS_TXT.format(total, users, chats, monsize, free, cpu, ram),
             reply_markup=reply_markup,
             parse_mode='html'
         )
     elif query.data == "rfrsh":
-        await query.answer("Fetching MongoDb DataBase 🚀")
+        await query.answer("Fetching My DataBase And Server 🚀")
         buttons = [[
             InlineKeyboardButton('👩‍🦯 Back', callback_data='help'),
             InlineKeyboardButton('♻️ Refresh ♻️', callback_data='rfrsh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        cpu = psutil.cpu_percent()
+        ram = psutil.virtual_memory().percent
         total = await Media.count_documents()
         users = await db.total_users_count()
         chats = await db.total_chat_count()
@@ -551,10 +581,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         monsize = get_size(monsize)
         free = get_size(free)
         await query.message.edit_text(
-            text=script.STATUS_TXT.format(total, users, chats, monsize, free),
+            text=script.STATUS_TXT.format(total, users, chats, monsize, free, cpu, ram),
             reply_markup=reply_markup,
             parse_mode='html'
-        )
+      )
     elif query.data.startswith("setgs"):
         ident, set_type, status, grp_id = query.data.split("#")
         grpid = await active_connection(str(query.from_user.id))
