@@ -1,4 +1,5 @@
-# Kanged From @TroJanZheX
+import shutil
+import psutil
 import asyncio
 import re
 import ast
