@@ -6,15 +6,14 @@ class script(object):
 🤖By Using Our Service You Must Agree To Our Privacy Policy 👀"""
     HELP_TXT = """🙋‍♂️𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂🚀"""
-    ABOUT_TXT = """<b>🙋‍♂️ I am </b>: <a href=https://t.me/BorutoAutoFilterRobot>Bᴏʀᴜᴛᴏ</a>
-<b>👨‍💻 𝖢𝗋𝖾𝖺𝗍𝗈𝗋</b>: <a href=https://github.com/KisaraPesanjithPerera>★彡ᕲᗩᖇᖶᕼ ᐺᗩᕲᘿᖇ彡★</a>
-
-🌶 Powered By :
-
-🎲 Heroku
-🧩 python
-📚 pyrogram
-<b>○ 𝖡𝗎𝗂𝗅𝖽 𝖲𝗍𝖺𝗍𝗎𝗌</b> : <code>v1.0.1 [ Beta ]</code>"""
+    ABOUT_TXT = """<b>🙋‍♂️ I Aᴍ </b>: <a href=https://t.me/BorutoAutoFilterRobot>Bᴏʀᴜᴛᴏ</a>
+<b>👨‍💻 Cʀᴇᴀᴛᴏʀ</b>: <a href=https://github.com/KisaraPesanjithPerera>★彡ᕲᗩᖇᖶᕼ ᐺᗩᕲᘿᖇ彡★</a>
+<b>🌶Pᴏᴡᴇʀᴇᴅ By</b>: @AnonymousBotsInfinity
+<b>◇───────────────◇</b>
+🎲 <b>Sᴇʀᴠᴇʀ</b> : Hᴇʀᴏᴋᴜ
+🧩 <b>Lᴀɴɢᴜᴀɢᴇ</b> : Pyᴛʜᴏɴ
+📚 <b>Lɪʙʀᴀʀy</b> : Pyʀᴏɢʀᴀᴍ
+📝 <b>Bᴜɪʟᴅ Sᴛᴀᴛᴜꜱ</b> : V1.0.1 [ Bᴇᴛᴀ ]"""
     MANUELFILTER_TXT = """Help: <b>Filters🧿</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and Boruto will respond whenever a keyword is found the message🍀
