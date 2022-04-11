@@ -95,6 +95,20 @@ This module only works for my admins🍀
 ★ 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂: <code>{}</code>
 ★ 𝚄𝚂𝙴𝙳 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱
 ★ 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱"""
+
+    CREDITS = """<b>Credit 🌟</b>
+    
+Bᴏʀᴜᴛᴏ Is A Auto Filter Bot As Well As One Bot In Telegram That Can Download Games,Movies & Series Inline📝
+
+- <b>Developer 👨‍💻</b>
+<b>★彡ᕲᗩᖇᖶᕼ ᐺᗩᕲᘿᖇ彡★</b>
+
+- <b>Thanks To 👑</b>
+<b>🏷️ Dan</b> For His Awsome Libary
+<b>🏷️ Mahesh</b> For His Awesome Media-Search-bot
+<b>🏷️ Trojanz</b> for Their Awesome Unlimited Filter Bot And AutoFilterBoT
+
+⚙️𝗣𝗼𝘄𝗲𝗿𝗱 𝗕𝘆 :- @AnonymousBotsInfinity"""
     LOG_TEXT_G = """#NewGroup
 🍀Group = {}(<code>{}</code>)
 🙋‍♂️Total Members = <code>{}</code>
