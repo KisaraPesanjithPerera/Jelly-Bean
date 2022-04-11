@@ -8,7 +8,7 @@ class script(object):
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂🚀"""
     ABOUT_TXT = """<b>🙋‍♂️ I Aᴍ </b>: <a href=https://t.me/BorutoAutoFilterRobot>Bᴏʀᴜᴛᴏ</a>
 <b>👨‍💻 Cʀᴇᴀᴛᴏʀ</b>: <a href=https://github.com/KisaraPesanjithPerera>★彡ᕲᗩᖇᖶᕼ ᐺᗩᕲᘿᖇ彡★</a>
-<b>🌶Pᴏᴡᴇʀᴇᴅ By</b>: @AnonymousBotsInfinity
+<b>🌶 Pᴏᴡᴇʀᴇᴅ By</b>: @AnonymousBotsInfinity
 
 <b>◇───────────────◇</b>
 
