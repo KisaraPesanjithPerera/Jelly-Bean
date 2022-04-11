@@ -9,7 +9,9 @@ class script(object):
     ABOUT_TXT = """<b>🙋‍♂️ I Aᴍ </b>: <a href=https://t.me/BorutoAutoFilterRobot>Bᴏʀᴜᴛᴏ</a>
 <b>👨‍💻 Cʀᴇᴀᴛᴏʀ</b>: <a href=https://github.com/KisaraPesanjithPerera>★彡ᕲᗩᖇᖶᕼ ᐺᗩᕲᘿᖇ彡★</a>
 <b>🌶Pᴏᴡᴇʀᴇᴅ By</b>: @AnonymousBotsInfinity
+
 <b>◇───────────────◇</b>
+
 🎲 <b>Sᴇʀᴠᴇʀ</b> : Hᴇʀᴏᴋᴜ
 🧩 <b>Lᴀɴɢᴜᴀɢᴇ</b> : Pyᴛʜᴏɴ
 📚 <b>Lɪʙʀᴀʀy</b> : Pyʀᴏɢʀᴀᴍ
@@ -89,22 +91,24 @@ This module only works for my admins🍀
 • /unban  - <code>to unban a user.</code>
 • /channel - <code>to get list of total connected channels</code>
 • /broadcast - <code>to broadcast a message to all users</code>"""
-    STATUS_TXT = """My Status 🤗
+    STATUS_TXT = """<b>My Sᴛᴀᴛᴜꜱ</b> 🤗
     
-📂 Total Movie saved : <code>{}</code>
-👤 Total Users : <code>{}</code>
-📝 Total Groups : <code>{}</code>
-🔰 Used Space : <code>{}</code> MB
-🗃️ Free Space : <code>{}</code> MB
+📂 <b>Tᴏᴛᴀʟ Mᴏᴠɪᴇ Sᴀᴠᴇᴅ</b> : <code>{}</code>
+👤 <b>Tᴏᴛᴀʟ Uꜱᴇʀꜱ</b> : <code>{}</code>
+📝 <b>Tᴏᴛᴀʟ Gʀᴏᴜᴩꜱ</b> : <code>{}</code>
+🔰 <b>Uꜱᴇᴅ Sᴩᴀᴄᴇ</b> : <code>{}</code> MB
+🗃️ <b>Fʀᴇᴇ Sᴩᴀᴄᴇ</b> : <code>{}</code> MB
 
-My Server Status 🍀
+<b>◇───────────────◇</b>
 
-💻 CPU Usage :</b> {}%
-☄️ RAM Usage :</b> {}%"""
+<b>My Sᴇʀᴠᴇʀ Sᴛᴀᴛᴜꜱ</b> 🍀
+
+<b>💻 Cᴩᴜ Uꜱᴀɢᴇ</b> : {}%
+<b>☄️ Rᴀᴍ Uꜱᴀɢᴇ</b> : {}%"""
 
     CREDITS = """<b>Credit 🌟</b>
     
-Bᴏʀᴜᴛᴏ Is A Auto Filter Bot As Well As One Bot In Telegram That Can Download Games,Movies & Series Inline📝
+Bᴏʀᴜᴛᴏ Is A Auto Filter Bot As Well As One Bot In Telegram That Can Download Movies & Series Inline📝
 
 - <b>Developer 👨‍💻</b>
 <b>★彡ᕲᗩᖇᖶᕼ ᐺᗩᕲᘿᖇ彡★</b>
