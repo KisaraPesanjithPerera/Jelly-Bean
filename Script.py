@@ -6,7 +6,7 @@ class script(object):
 🤖By Using Our Service You Must Agree To Our Privacy Policy 👀"""
     HELP_TXT = """🙋‍♂️𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂🚀"""
-    ABOUT_TXT = """<b>🙋‍♂️ I Aᴍ </b>: <a href=https://t.me/BorutoAutoFilterRobot>Bᴏʀᴜᴛᴏ</a>
+    ABOUT_TXT = """<b>🙋‍♂️ I Aᴍ </b>: <a href=http://t.me/JellyBeanAutoFilterRobot>𝗝𝗲𝗹𝗹𝘆 𝗕𝗲𝗮𝗻 🍯</a>
 <b>👨‍💻 Cʀᴇᴀᴛᴏʀ</b>: <a href=https://github.com/KisaraPesanjithPerera>★彡ᕲᗩᖇᖶᕼ ᐺᗩᕲᘿᖇ彡★</a>
 <b>🌶 Pᴏᴡᴇʀᴇᴅ By</b>: @AnonymousBotsInfinity
 
@@ -18,10 +18,10 @@ class script(object):
 📝 <b>Bᴜɪʟᴅ Sᴛᴀᴛᴜꜱ</b> : V1.0.1 [ Bᴇᴛᴀ ]"""
     MANUELFILTER_TXT = """Help: <b>Filters🧿</b>
 
-- Filter is the feature were users can set automated replies for a particular keyword and Boruto will respond whenever a keyword is found the message🍀
+- Filter is the feature were users can set automated replies for a particular keyword and Jelly Bean 🍯 will respond whenever a keyword is found the message🍀
 
 <b>NOTE📝:</b>
-1. Boruto should have admin privillage.
+1. Jelly Bean 🍯 should have admin privillage.
 2. Only admins can add filters in a chat.
 3. Alert buttons have a limit of 64 characters.
 
@@ -32,11 +32,11 @@ class script(object):
 • /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
     BUTTON_TXT = """Help: <b>Buttons🧿</b>
 
-- Boruto supports both url and alert inline buttons🍀
+- Jelly Bean 🍯 supports both url and alert inline buttons🍀
 
 <b>NOTE📝:</b>
 1. Telegram will not allows you to send buttons without any content, so content is mandatory.
-2. Boruto supports buttons with any telegram media type.
+2. Jelly Bean 🍯 supports buttons with any telegram media type.
 3. Buttons should be properly parsed as markdown format
 
 <b>📌URL Buttons:</b>
@@ -67,7 +67,7 @@ class script(object):
     EXTRAMOD_TXT = """Help: <b>Extra Modules🧿</b>
 
 <b>NOTE📝:</b>
-These are the extra features of Boruto🌹
+These are the extra features of Jelly Bean🍯
 
 <b>Commands and Usage🚀</b>
 • /id - <code>get id of a specified user.</code>
@@ -108,7 +108,7 @@ This module only works for my admins🍀
 
     CREDITS = """<b>Credit 🌟</b>
     
-Bᴏʀᴜᴛᴏ Is A Auto Filter Bot As Well As One Bot In Telegram That Can Download Movies & Series Inline📝
+𝗝𝗲𝗹𝗹𝘆 𝗕𝗲𝗮𝗻 🍯 Is A Auto Filter Bot As Well As One Bot In Telegram That Can Download Movies & Series Inline📝
 
 - <b>Developer 👨‍💻</b>
 <b>★彡ᕲᗩᖇᖶᕼ ᐺᗩᕲᘿᖇ彡★</b>
